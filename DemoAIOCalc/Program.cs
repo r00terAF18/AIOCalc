@@ -7,11 +7,15 @@ namespace DemoAIOCalc
     {
         static void Main(string[] args)
         {
-        	greet();
-            Physic ph = new Physic();
-            double v = ph.v_avg(34.5, 9.0);
+        	// greet();
+        	Console.WriteLine();
 
-            Console.WriteLine($"The Average speed for 34.5 and 9.0 is -> {v}");
+
+            Vector v = new Vector();
+            v.x = 4;
+            v.y = -9;
+
+            Console.WriteLine($"Vector v is build by X = {v.x} and Y = {v.y}");
         }
 
         public static void greet()

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace AIOCalc
 {
@@ -19,6 +20,11 @@ namespace AIOCalc
         {
             i = I;
             j = J;
+        }
+
+        public Matrix()
+        {
+            
         }
 
         public Matrix initMatrix()

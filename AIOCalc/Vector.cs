@@ -11,6 +11,11 @@ namespace AIOCalc
             x = X;
             y = Y;
         }
+
+        public Vector()
+        {
+        	
+        }
         
         public override string ToString()
         {
