@@ -26,7 +26,7 @@ namespace AIOCalc
         /// </summary>
         /// <param name="n">Number to get the root of</param>
         /// <param name="r">The level of the root</param>
-        /// <returns>A double value</returns>
+        /// <returns>Root of n by r (double)</returns>
         public double Root(double n, double r)
         {
             return Math.Pow(n, 1.0 / r);

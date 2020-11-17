@@ -15,7 +15,7 @@ namespace DemoAIOCalc
             v.x = 4;
             v.y = -9;
 
-            Console.WriteLine($"Vector v is build by X = {v.x} and Y = {v.y}");
+            Console.WriteLine($"{v.ToString()}");
         }
 
         public static void greet()

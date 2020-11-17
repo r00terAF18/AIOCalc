@@ -14,12 +14,12 @@ namespace AIOCalc
 
         public Vector()
         {
-        	
+
         }
         
         public override string ToString()
         {
-            return "Vector X: " + x.ToString() + " - Y: " + y.ToString();
+            return "Vector X: " + x.ToString() + " || Y: " + y.ToString();
         }
 
         /// <summary>
