@@ -7,20 +7,17 @@ namespace DemoAIOCalc
     {
         static void Main(string[] args)
         {
-        	// greet();
-        	Console.WriteLine();
+            // greet();
+            Console.WriteLine();
 
+            Vector2D v = new Vector2D(4, -9);
 
-            Vector v = new Vector();
-            v.x = 4;
-            v.y = -9;
-
-            Console.WriteLine($"{v.ToString()}");
+            Console.WriteLine($"{v.VectorAdd(new Vector2D(55, 90))}");
         }
 
         public static void greet()
         {
-        	Console.WriteLine(@"
+            Console.WriteLine(@"
 
             /$$$$$$   /$$$$$$    /$$                          /$$$$$$  /$$$$$$$$  /$$    /$$$$$$ 
            /$$$_  $$ /$$$_  $$  | $$                         /$$__  $$| $$_____//$$$$   /$$__  $$
@@ -35,7 +32,7 @@ namespace DemoAIOCalc
                                                                                                  
 
 ");
-        	Console.WriteLine(@"
+            Console.WriteLine(@"
 
   /$$$$$$  /$$$$$$  /$$$$$$   /$$$$$$            /$$          
  /$$__  $$|_  $$_/ /$$__  $$ /$$__  $$          | $$          
