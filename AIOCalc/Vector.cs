@@ -56,14 +56,21 @@ namespace AIOCalc
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="Va1"></param>
-        /// <param name="Va2"></param>
-        /// <param name="Vb1"></param>
-        /// <param name="Vb2"></param>
-        /// <returns></returns>
+        /// <param name="Vector2D V2"></param>
+        /// <returns>Scalar of two vectors</returns>
         public double VectorScalar(Vector2D V2)
         {
             return (this.x * V2.x) + (this.y * V2.y);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Vector2D V2"></param>
+        /// <returns>Scalar Product of two vectors</returns>
+        public double VectorScalarProduct(Vector2D V2, int angle)
+        {
+            return this.VectorMagnitude() * V2.VectorMagnitude() * Math.cos(angle);
         }
 
         /// <summary>
@@ -72,7 +79,7 @@ namespace AIOCalc
         /// </summary>
         /// <param name="n"></param>
         /// <returns>Double</returns>
-        public double VectorLength(int n)
+        public double VectorMagnitude(int n)
         {
             if (n <= 0)
             {
@@ -87,9 +94,31 @@ namespace AIOCalc
         /// </summary>
         /// <param name="n"></param>
         /// <returns>Double</returns>
-        public double VectorLength()
+        public double VectorMagnitude()
         {
             return Math.Round(Math.Sqrt(Math.Pow(this.x, 2) + Math.Pow(this.y, 2)), 2);
+        }
+
+        /// <summary>
+        /// Calclate Vector directions using x and cos of theta
+        /// </summary>
+        /// <param name='ax'>Vector x</param>
+        /// <param name='angle theta'>Vector x</param>
+        /// <returns>double</returns>
+        public double Vector_dx(double angle)
+        {
+            return this.x * Math.Cos(angle);
+        }
+
+        /// <summary>
+        /// Calclate Vector directions using y and sin of theta
+        /// </summary>
+        /// <param name='ay'>Vector x</param>
+        /// <param name='angle theta'>Vector y</param>
+        /// <returns>double</returns>
+        public double Vector_dy(double angle)
+        {
+            return this.y * Math.Sin(angle);
         }
     }
 
@@ -165,7 +194,7 @@ namespace AIOCalc
         /// </summary>
         /// <param name="n"></param>
         /// <returns>Double</returns>
-        public double VectorLength(int n)
+        public double VectorMagnitude(int n)
         {
             if (n <= 0)
             {
@@ -180,9 +209,31 @@ namespace AIOCalc
         /// </summary>
         /// <param name="n"></param>
         /// <returns>Double</returns>
-        public double VectorLength()
+        public double VectorMagnitude()
         {
             return Math.Round(Math.Sqrt(Math.Pow(this.x, 2) + Math.Pow(this.y, 2) + Math.Pow(this.z, 2)), 2);
+        }
+
+        /// <summary>
+        /// Calclate Vector directions using x and cos of theta
+        /// </summary>
+        /// <param name='ax'>Vector x</param>
+        /// <param name='angle theta'>Vector x</param>
+        /// <returns>double</returns>
+        public double Vector_dx(double angle)
+        {
+            return this.x * Math.Cos(angle);
+        }
+
+        /// <summary>
+        /// Calclate Vector directions using y and sin of theta
+        /// </summary>
+        /// <param name='ay'>Vector x</param>
+        /// <param name='angle theta'>Vector y</param>
+        /// <returns>double</returns>
+        public double Vector_dy(double angle)
+        {
+            return this.y * Math.Sin(angle);
         }
     }
 }

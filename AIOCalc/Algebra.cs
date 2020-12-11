@@ -4,7 +4,7 @@ namespace AIOCalc
 {
     public class Algebra
     {
-    	/// <summary>
+        /// <summary>
         /// This function factorials the given number.
         /// </summary>
         /// <param name="n">a double value to get the factor of</param>
@@ -69,7 +69,7 @@ namespace AIOCalc
             double q = 1 - p;
             double s = Math.Sqrt((n * p * q));
             Math.Round(s, 4);
-            
+
             return s;
         }
 

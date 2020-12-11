@@ -24,14 +24,14 @@ namespace AIOCalc
 
         public Matrix()
         {
-            
+
         }
 
         public Matrix initMatrix()
-        {            
+        {
             for (int Aj = 0; Aj < this.j; Aj++)
             {
-                Console.Write("Enter value for position {0},{1} >>> ", 0, Aj);                
+                Console.Write("Enter value for position {0},{1} >>> ", 0, Aj);
                 this.aj.Add(double.Parse(Console.ReadLine()));
             }
 
@@ -40,7 +40,7 @@ namespace AIOCalc
                 Console.Write("Enter value for position {0},{1} >>> ", Ai, 0);
                 this.ai.Add(double.Parse(Console.ReadLine()));
             }
-            
+
             //Console.Clear();
 
             for (int Aj = 0; Aj < this.j; Aj++)
